@@ -7,12 +7,13 @@ metadata:
     tier: database
     environment: dev
 spec:
-- name: nginx
-  image: nginx
-  resources:
-    requests:
-      memory: "64mi"
-      cpu: "100m"
-    limits:
-      memory: "128mi"
-      cpu: "150m"
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests:
+        memory: "64mi"
+        cpu: "100m"
+      limits:
+        memory: "128mi"
+        cpu: "150m"
